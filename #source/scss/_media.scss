@@ -1,0 +1,143 @@
+/*==================================== MEDIA ====================================*/
+/*==================================== MEDIA ====================================*/
+
+/*------------------------------ 880 ------------------------------*/
+
+@media (max-width: 880px) {
+	.header {
+		z-index: 100;
+		height: 80px;
+
+		&__menu {
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			background: #fff;
+			margin-right: 0;
+			min-width: 320px;
+			transition: all .3s;
+			transform: translate(100%, 0);
+
+			&--active {
+				transform: translate(0, 0);
+			}
+		}
+
+		&__menu-list {
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+		}
+
+		&__menu-item {
+			margin-bottom: 30px;
+		}
+
+		&__search-button {
+			margin-right: 100px;
+		}
+	}
+
+	.burger {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		width: 50px;
+		height: 50px;
+		position: fixed;
+		top: 16px;
+		right: 20px;
+		transition: all .3s;
+		z-index: 100;
+
+		&__line {
+			width: 40px;
+			height: 4px;
+			border-radius: 3px;
+			background: #000;
+			transition: all .3s;
+		}
+
+		&--active {
+			transform: rotate(45deg);
+
+			.burger__line {
+				position: absolute;
+
+				&:first-child {
+					transform: rotate(90deg);
+				}
+
+				&:last-child {
+					transform: rotate(90deg);
+				}
+			}
+		}
+	}
+
+	.overlay {
+		position: fixed;
+		top: 0;
+		bottom: 0;
+		right: 0;
+		left: 0;
+		background: #00000045;
+		visibility: hidden;
+		opacity: 0;
+		z-index: 98;
+
+		&--show {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+
+	.hero {
+		padding-top: 80px;
+	}
+}
+
+
+/*------------------------------ 650 ------------------------------*/
+
+@media (max-width: 650px) {
+	.hero {
+		&__heading {
+			font-size: 40px;
+		}
+
+		&__text {
+			font-size: 18px;
+		}
+
+		&__button {
+			font-size: 18px;
+			width: 180px;
+			height: 60px;
+		}
+
+		&__button-box {
+			width: 400px;
+		}
+	}
+}
+
+/*------------------------------ 450 ------------------------------*/
+
+@media (max-width: 450px) {
+	.hero {
+
+		&__heading {
+			font-size: 30px;
+		}
+		&__button-box {
+			flex-direction: column;
+			width: 100%;
+			align-items: center;
+			height: 150px;
+		}
+	}
+}
