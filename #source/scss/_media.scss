@@ -47,6 +47,17 @@
 			}
 		}
 	}
+
+	.contact {
+		&__form-input {
+			padding: 15px;
+		}
+
+		&__form-text {
+			padding: 15px;
+			height: 200px;
+		}
+	}
 }
 
 /*------------------------------ 880 ------------------------------*/
@@ -219,6 +230,41 @@
 
 		&__item-body {
 			padding-top: 30px;
+		}
+	}
+}
+
+
+/*------------------------------ 790 ------------------------------*/
+
+@media (max-width: 790px) {
+	.contact {
+		&__list {
+			flex-direction: column;
+		}
+
+		&__item {
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 30px;
+		}
+
+		&__item-icon {
+			margin-right: 30px;
+			margin-bottom: 0;
+			width: 80px;
+			height: 80px;
+
+			img {
+				width: 50%;
+			}
+		}
+
+		&__item-info {
+			text-align: left;
+			font-size: 15px;
+			max-width: 190px;
 		}
 	}
 }
@@ -471,6 +517,22 @@
 	.plan {
 		&__card {
 			width: 290px;
+		}
+	}
+
+	.contact {
+		&__form-top {
+			flex-direction: column;
+		}
+
+		&__form-input {
+			&:first-child {
+				margin-right: 0;
+				margin-bottom: 30px;
+			}
+		}
+		&__form-button {
+			width: 100%;
 		}
 	}
 }
