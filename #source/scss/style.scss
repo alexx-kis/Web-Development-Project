@@ -65,8 +65,8 @@ html {
 	height: 120px;
 	z-index: 100;
 	box-shadow: 0px 0px 40px 1px #0000004a;
-	transition: all .5s;
-	transform: translateY(-100px);
+	transition: all .5s 1.5s;
+	transform: translateY(-150px);
 
 	&__inner {
 		height: 100%;

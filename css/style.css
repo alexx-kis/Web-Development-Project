@@ -169,11 +169,11 @@ html {
   z-index: 100;
   -webkit-box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.2901960784);
           box-shadow: 0px 0px 40px 1px rgba(0, 0, 0, 0.2901960784);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-transform: translateY(-100px);
-      -ms-transform: translateY(-100px);
-          transform: translateY(-100px);
+  -webkit-transition: all 0.5s 1.5s;
+  transition: all 0.5s 1.5s;
+  -webkit-transform: translateY(-150px);
+      -ms-transform: translateY(-150px);
+          transform: translateY(-150px);
 }
 .header__inner {
   height: 100%;
